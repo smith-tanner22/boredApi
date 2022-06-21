@@ -1,0 +1,22 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Bored API",
+    "description": "This will commands for various lanaguages and Frameworks",
+    "version": "1.0.0"
+  },
+  "host": "cse341boredapi.herokuapp.com/",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/api-docs": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    }
+  }
+}

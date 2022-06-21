@@ -2,7 +2,7 @@ const swaggerAutogen = require('swagger-autogen')();
 
 const doc = {
   info: {
-    title: 'Commands API',
+    title: 'Bored API',
     description: 'This will commands for various lanaguages and Frameworks',
   },
   host: 'cse341boredapi.herokuapp.com/',
