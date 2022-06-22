@@ -28,6 +28,12 @@
   "schemes": [
     "https"
   ],
+  "securityDefinitions":{
+  "Bearer":{
+    "type": "apiKey",
+    "name": "Authorization",
+    "in": "header"}},
+
   "paths": {
     "/api-docs": {
       "get": {
@@ -35,6 +41,342 @@
         "parameters": [],
         "responses": {}
       }
+    },
+     "/users/": {
+      "get": {
+        "security":{
+        "Bearer": []},
+        "tags":["Users"],
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "post": {
+        "security":{
+        "Bearer": []},
+        "tags":["Users"],
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "lastName": {
+                  "example": "string"
+                },
+                "lastName": {
+                  "example": "string"
+                },
+                "email": {
+                  "example": "string@mail"
+                },
+                "password": {
+                  "example": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+     "/user/{id}": {
+      "get": {
+        "security":{
+        "Bearer": []},
+        "tags":["Users"],
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "put": {
+        "security":{
+        "Bearer": []},
+        "tags":["Users"],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "softwareType": {
+                  "example": "any"
+                },
+                "operatingSys": {
+                  "example": "any"
+                },
+                "command": {
+                  "example": "any"
+                },
+                "description": {
+                  "example": "any"
+                },
+                "authorId": {
+                  "example": "any"
+                },
+                "otherShortCut": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "delete": {
+        "security":{
+        "Bearer": []},
+        "tags":["Users"],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+      
+    },
+     "/reviews/": {
+      "get": {
+        "security":{
+        "Bearer": []},
+        "tags":["Review"],
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "post": {
+        "security":{
+        "Bearer": []},
+        "tags":["Review"],
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "softwareType": {
+                  "example": "any"
+                },
+                "operatingSys": {
+                  "example": "any"
+                },
+                "command": {
+                  "example": "any"
+                },
+                "description": {
+                  "example": "any"
+                },
+                "authorId": {
+                  "example": "any"
+                },
+                "otherShortCut": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+     "/review/{id}": {
+      "get": {
+        "security":{
+        "Bearer": []},
+        "tags":["Review"],
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "put": {
+        "security":{
+        "Bearer": []},
+        "tags":["Review"],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "softwareType": {
+                  "example": "any"
+                },
+                "operatingSys": {
+                  "example": "any"
+                },
+                "command": {
+                  "example": "any"
+                },
+                "description": {
+                  "example": "any"
+                },
+                "authorId": {
+                  "example": "any"
+                },
+                "otherShortCut": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "delete": {
+        "security":{
+        "Bearer": []},
+        "tags":["Review"],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+      
     }
   }
 }
