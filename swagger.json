@@ -25,6 +25,7 @@
       "description": "This will be the user that will be created when login"
     }
   ],
+
   "schemes": [
     "https"
   ],
@@ -35,11 +36,66 @@
     "in": "header"}},
 
   "paths": {
-    "/api-docs": {
+    "/ideas/": {
       "get": {
         "description": "",
+        "produces": ["application/json"],
         "parameters": [],
-        "responses": {}
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "description": "",
+        "tags": ["Idea"],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "category": {
+                  "type": "string"
+                },
+                "location": {
+                  "type": "string"
+                },
+                "inside/ outside": {
+                  "type": "boolean"
+                },
+                "cost": {
+                  "type": "number"
+                },
+                "requirements": {
+                  "type": "string"
+                },
+                "participants": {
+                  "type": "number"
+                },
+                "reviews": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Created"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
       }
     },
      "/users/": {
