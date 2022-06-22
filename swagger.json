@@ -7,6 +7,24 @@
   },
   "host": "cse341boredapi.herokuapp.com/",
   "basePath": "/",
+  "tags": [
+    {
+      "name": "Idea",
+      "description": "Ideas of an activity that a user get do."
+    },
+    {
+      "name": "Category",
+      "description": "The different category of Ideas: Outside activity or Indoors"
+    },
+    {
+      "name": "Review",
+      "description": "Reviews given by user after using an specific "
+    },
+    {
+      "name": "Users",
+      "description": "This will be the user that will be created when login"
+    }
+  ],
   "schemes": [
     "https"
   ],
