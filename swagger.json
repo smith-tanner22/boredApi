@@ -132,7 +132,7 @@
                 "lastName": {
                   "example": "string"
                 },
-                "lastName": {
+                "firstName": {
                   "example": "string"
                 },
                 "email": {
@@ -202,22 +202,13 @@
             "schema": {
               "type": "object",
               "properties": {
-                "softwareType": {
+                "lastName": {
                   "example": "any"
                 },
-                "operatingSys": {
+                "firstName": {
                   "example": "any"
                 },
-                "command": {
-                  "example": "any"
-                },
-                "description": {
-                  "example": "any"
-                },
-                "authorId": {
-                  "example": "any"
-                },
-                "otherShortCut": {
+                "email": {
                   "example": "any"
                 }
               }
@@ -294,23 +285,11 @@
             "schema": {
               "type": "object",
               "properties": {
-                "softwareType": {
-                  "example": "any"
-                },
-                "operatingSys": {
-                  "example": "any"
-                },
-                "command": {
-                  "example": "any"
-                },
                 "description": {
-                  "example": "any"
+                  "example": "string"
                 },
-                "authorId": {
-                  "example": "any"
-                },
-                "otherShortCut": {
-                  "example": "any"
+                "rating": {
+                  "example": "Number"
                 }
               }
             }
@@ -373,23 +352,11 @@
             "schema": {
               "type": "object",
               "properties": {
-                "softwareType": {
-                  "example": "any"
-                },
-                "operatingSys": {
-                  "example": "any"
-                },
-                "command": {
-                  "example": "any"
-                },
                 "description": {
-                  "example": "any"
+                  "example": "string"
                 },
-                "authorId": {
-                  "example": "any"
-                },
-                "otherShortCut": {
-                  "example": "any"
+                "rating": {
+                  "example": "number"
                 }
               }
             }
