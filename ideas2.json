@@ -1,38 +1,160 @@
 [
   {
     "name": "Uno",
-    "description": "",
+    "description": "The first player to play all of the cards in their hand in each round scores points for the cards their opponents are left holding. The first player to score 500 points wins the game.Rules: https://www.ultraboardgames.com/uno/game-rules.php",
     "cost": 3.0,
     "inside": true,
     "location": "Home",
     "participants": "2-10",
     "requirement": { "accesibility": true, "age": "7+" },
-    "review": "id",
-    "category": "social",
-    "media": "id"
+    "review":[],
+    "category": "Social",
+    "media": []
+  },
+
+  {
+    "name": "Nintendo : Smash Bros",
+    "description": "Gameplay in the Super Smash Bros. series differs from many fighting games. Instead of winning by depleting an opponent's life bar, players seek to launch their opponents off the stage and out of bounds. Characters have a damage total which rises as they take damage, represented by a percentage value that measures up to 999%. As a character's percentage rises, the character can be knocked progressively farther by an opponent's attacks.[2] To knock out an opponent, the player must knock that character outside the stage's boundaries in any direction. When a character is launched off the stage, the character can attempt to 'recover' by using jumping moves and abilities to return to the stage. Some characters have an easier time recovering onto the stage than others due to their moves and abilities. Additionally, some characters vary in weight, with lighter characters being easier to launch than heavy characters.",
+    "cost": 300,
+    "inside": true,
+    "location": "Home",
+    "participants": "1-8",
+    "requirement": { "accesibility": true, "age": "7+" },
+    "review": [],
+    "category": "Social",
+    "media": []
   },
   {
-    "name": "Uno",
-    "description": "",
-    "cost": 3.0,
+    "name": "Monopoly",
+    "description": "Monopoly is a multi-player economics-themed board game. In the game, players roll two dice to move around the game board, buying and trading properties, and developing them with houses and hotels. Players collect rent from their opponents, with the goal being to drive them into bankruptcy. Money can also be gained or lost through Chance and Community Chest cards, and tax squares. Rules: https://www.ultraboardgames.com/monopoly/game-rules.php",
+    "cost": 32.0,
     "inside": true,
     "location": "Home",
-    "participants": "2-10",
+    "participants": "2-8",
     "requirement": { "accesibility": true, "age": "7+" },
-    "review": "id",
+    "review": [],
     "category": "social",
-    "media": "id"
+    "media": []
   },
   {
-    "name": "Uno",
-    "description": "",
-    "cost": 3.0,
+    "name": "Cooking Competition",
+    "description":"This activity requires the Game-Lead to select a list of Ingredients. The Teams will then be given an fix amount of time to prepare a meal/dish that will include all the Ingredients. The finished meals/dishes will be judge by presentation, taste and use of all ingredients.  ",
+    "cost": 10.00,
     "inside": true,
     "location": "Home",
-    "participants": "2-10",
+    "participants": "3+",
     "requirement": { "accesibility": true, "age": "7+" },
-    "review": "id",
-    "category": "social",
-    "media": "id"
+    "review": [],
+    "category": "Social",
+    "media": []
+  },
+   {
+    "name": "Basketball",
+    "description":"Basketball is a game played between two teams of five players, (Two individual can also count a team) each on a rectangular court, usually indoors. Each team tries to score by tossing the ball through the opponent's goal, an elevated horizontal hoop and net called a basket. Rules: https://www.ducksters.com/sports/basketballrules.php",
+     "cost": 10.00,
+    "inside": true,
+    "location": "Home",
+    "participants": "2+",
+    "requirement": { "accesibility": true, "age": "7+" },
+    "review": [],
+    "category": "Social",
+    "media": []
+  },
+   {
+    "name": "Watch a Movie",
+    "description":"Here is a list of Platforms to stream movies: Netflix, Hulu 3, Disney+ 4, HBO Max, Peacock. Here is a list of Favorites to watch: Star Wars, StrangerThings, Lord of the Rings, Inception, Harry Potter, Toy Story, Lion King, Back to the Future, Jurassic Park, Dark Knight, The GodFather, The Shining, E.T, Avengers: End Game, Thor: Ragnarok, Spider-man", 
+    "cost": 2,
+    "inside": true,
+    "location": "Home",
+    "participants": "2+",
+    "requirement": { "accesibility": true, "age": "4+" },
+    "review": [],
+    "category": "Social",
+    "media": []
+  },
+  {
+    "name": "Hammocking",
+    "description":"A hanging, easily swung length of canvas or heavy netting suspended between two trees or other supports and used as a seat or bed.",
+    "cost": 12,
+    "inside": false,
+    "location": "Park",
+    "participants": "2+",
+    "requirement": { "accesibility": true, "age": "16+" },
+    "review": [],
+    "category": "Social",
+    "media": []
+  },
+   {
+    "name": "Rope Course",
+    "description":"The Ropes Course contains three levels, each more challenging than the previous level. The bottom level had moderate challenges and the top level is the most difficult. Participants are connected to the course with a continuous belay system to explore the course. Fantastic individual and group-challenge activity. (Limited to 60 participants per two-hour period. Rules: https://www.byui.edu/ropes-course/#team-building-at-ground-level)",
+    "cost": 5,
+    "inside": false,
+    "location": "BYUI Rope Course",
+    "participants": "2+",
+    "requirement": { "accesibility": true, "age": "16+" },
+    "review": [],
+    "category": "Social",
+    "media": []
+  },
+  {
+    "name": "Dunes",
+    "description":"The Dunes are a great place to go camping, Roasting marshmellow on a open Fire or simple star gazing.",
+     "cost": 5,
+    "inside": false,
+    "location": "St. Anthony Sand Dunes, Idaho",
+    "participants": "2+",
+    "requirement": { "accesibility": true, "age": "16+" },
+    "review": [],
+    "category": "Social",
+    "media": []
+  },
+  {
+    "name": "Pickleball",
+    "description":"Pickleball is a paddle sport that combines elements of tennis, badminton, and ping-pong using a paddle and plastic ball with holes. It is a game that is appropriate for players of all ages and skill levels. Rules for pickleball are simple, making it a great introductory sport. Rules: https://www.pickleball.com/rules-how-to-play-pickleball-s/106.htm",
+    "cost": 5,
+    "inside": false,
+    "location": "BYU-Idaho Racquetball Courts",
+    "participants": "2+",
+    "requirement": { "accesibility": true, "age": "16+" },
+    "review": [],
+    "category": "Social",
+    "media": []
+  },
+   {
+    "name": "Spikeball",
+    "description":"Spikeball is a team sport played by two teams of two players. Opposing teams line up across from each other with the Spikeball net in the center. The ball is put in play with a serve—a hit by the server from behind the service boundary into the net to an opposing player. Rules: https://spikeball.com/pages/official-rules",
+    "cost": 60,
+    "inside": false,
+    "location": "Park",
+    "participants": "2-4",
+    "requirement": { "accesibility": true, "age": "16+" },
+    "review": [],
+    "category": "Social",
+    "media": []
+  },
+  {
+    "name": "Kan Jam",
+    "description":"Kan Jam is a flying disc game, played with a flying disc and two cans into which players deflect the disc. Teams of two players take turns tossing a disc between two plastic cans, scoring points if the disc hits or is deflected into one of the cans. Rules: https://www.wku.edu/crw/intramurals/kan_jam_rules.pdf",
+     "cost": 40,
+    "inside": false,
+    "location": "Park",
+    "participants": "2-4",
+    "requirement": { "accesibility": true, "age": "16+" },
+    "review": [],
+    "category": "Social",
+    "media": []
+  },
+   {
+    "name": "CornHole",
+    "description":"Cornhole is a lawn game popular in North America in which players or teams take turns throwing fabric bean bags at a raised, angled board with a hole in its far end. The goal of the game is to score points by either landing a bag on the board or putting a bag through the hole. Rules: https://www.ajjcornhole.com/cornhole-rules.php#:~:text=Cornhole%20Keynotes,throws%20until%20no%20bags%20remain",
+    "cost": 50,
+    "inside": false,
+    "location": "Park",
+    "participants": "2+",
+    "requirement": { "accesibility": true, "age": "16+" },
+    "review": [],
+    "category": "Social",
+    "media": []
   }
+
 ]
