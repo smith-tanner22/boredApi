@@ -13,8 +13,8 @@
       "description": "Ideas of an activity that a user get do."
     },
     {
-      "name": "Category",
-      "description": "The different category of Ideas: Outside activity or Indoors"
+      "name": "Media",
+      "description": "The different media for the Ideas"
     },
     {
       "name": "Review",
@@ -430,13 +430,13 @@
               "type": "object",
               "properties": {
                 "lastName": {
-                  "example": "any"
+                  "type": "string"
                 },
                 "firstName": {
-                  "example": "any"
+                  "type": "string"
                 },
                 "email": {
-                  "example": "any"
+                  "type": "string"
                 }
               }
             }
@@ -513,10 +513,10 @@
               "type": "object",
               "properties": {
                 "description": {
-                  "example": "string"
+                  "type": "string"
                 },
                 "rating": {
-                  "example": "Number"
+                  "type": "number"
                 }
               }
             }
@@ -580,10 +580,10 @@
               "type": "object",
               "properties": {
                 "description": {
-                  "example": "string"
+                  "type": "string"
                 },
                 "rating": {
-                  "example": "number"
+                  "type": "number"
                 }
               }
             }
