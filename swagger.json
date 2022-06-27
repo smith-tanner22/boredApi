@@ -13,8 +13,8 @@
       "description": "Ideas of an activity that a user get do."
     },
     {
-      "name": "Category",
-      "description": "The different category of Ideas: Outside activity or Indoors"
+      "name": "Media",
+      "description": "The different media for the Ideas"
     },
     {
       "name": "Review",

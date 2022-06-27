@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Uno",
+    "description": "",
+    "cost": 3.0,
+    "inside": true,
+    "location": "Home",
+    "participants": "2-10",
+    "requirement": { "accesibility": true, "age": "7+" },
+    "review": "id",
+    "category": "social",
+    "media": "id"
+  },
+  {
+    "name": "Uno",
+    "description": "",
+    "cost": 3.0,
+    "inside": true,
+    "location": "Home",
+    "participants": "2-10",
+    "requirement": { "accesibility": true, "age": "7+" },
+    "review": "id",
+    "category": "social",
+    "media": "id"
+  },
+  {
+    "name": "Uno",
+    "description": "",
+    "cost": 3.0,
+    "inside": true,
+    "location": "Home",
+    "participants": "2-10",
+    "requirement": { "accesibility": true, "age": "7+" },
+    "review": "id",
+    "category": "social",
+    "media": "id"
+  }
+]
