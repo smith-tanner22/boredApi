@@ -27,10 +27,18 @@ const CreateMediaBodyValid = async (body)=>{
         return schema.validate(body);
     }
 
+const CreateReviewBodyValid = async (body)=>{
+        const schema = Joi.object({
+                description: Joi.string().required(),
+                ideaId: Joi.string().required()
+        })
+        return schema.validate(body);
+    }
 
 
 
     module.exports={
          CreateIdeaBodyValid,
          CreateMediaBodyValid,
+         CreateReviewBodyValid,
     }
