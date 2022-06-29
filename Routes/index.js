@@ -3,6 +3,6 @@ const express = require('express');
 const router = express.Router();
 
 router.use('/', require('./swagger'));
-router.use('/ideas', require('./idea'))
+router.use('/ideas', require('./ideas'));
 
 module.exports = router;

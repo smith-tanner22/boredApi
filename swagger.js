@@ -5,7 +5,7 @@ const doc = {
     title: 'Bored API',
     description: 'This will commands for various lanaguages and Frameworks',
   },
-  host: 'cse341boredapi.herokuapp.com/',
+  host: 'cse341boredapi.herokuapp.com',
   schemes: ['https'],
 };
 
