@@ -46,8 +46,8 @@ app
   })
   .use('/', require('./Routes'));
 
-const port = process.env.PORT || 3000;
-app.listen(port);
+const port = process.env.PORT || 8080;
+
 
 mongodb.initDb((err) => {
   if (err) {
