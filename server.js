@@ -39,6 +39,7 @@ var options = {
 // });
 app
   .use(bodyParser.json())
+  .use(cors())
   .use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
@@ -47,7 +48,6 @@ app
   .use('/', require('./Routes'));
 
 const port = process.env.PORT || 8080;
-
 
 mongodb.initDb((err) => {
   if (err) {
