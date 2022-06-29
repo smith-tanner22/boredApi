@@ -29,7 +29,7 @@ app
     next();
   })
 
-  .use('/', require('./routes'));
+  .use('/', require('./Routes'));
 
 process.on('uncaughtException', (err, origin) => {
   console.log(
