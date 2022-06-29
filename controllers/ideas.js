@@ -1,5 +1,5 @@
 const mongodb = require('../DataBase/dbConnect');
-const ObjectId = require('mongodb').ObjectID;
+const ObjectId = require('mongodb').ObjectId;
 // import validation
 
 const getAll = async (req, res) => {
