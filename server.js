@@ -1,9 +1,15 @@
 const express = require('express');
 const cors = require('cors');
 const mongodb = require('./DataBase/dbConnect');
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./swagger.json');
 const bodyParser = require('body-parser');
 const app = express();
 // test 2
+
+var options = {
+  explorer: true,
+};
 
 app
   .use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument, options))
@@ -40,7 +46,7 @@ process.on('uncaughtException', (err, origin) => {
 //   })
 //   .use('/', require('./Routes'));
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 3000;
 app.listen(port);
 
 mongodb.initDb((err) => {

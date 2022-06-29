@@ -1,4 +1,4 @@
-const mongodb = require('mongodb');
+const mongodb = require('../Database/dbConnect');
 const ObjectId = require('mongodb').ObjectID;
 // import validation
 
