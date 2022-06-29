@@ -1,4 +1,4 @@
-const mongodb = require('../db/connect');
+const mongodb = require('../DataBase/dbConnect');
 const ObjectId = require('mongodb').ObjectId;
 const {CreateReviewBodyValid } = require("../Utils/validation")
 
