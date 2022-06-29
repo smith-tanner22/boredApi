@@ -1,4 +1,4 @@
-const mongodb = require('../Database/dbConnect');
+const mongodb = require('../DataBase/dbConnect');
 const ObjectId = require('mongodb').ObjectId;
 const {
   CreateMediaBodyValid,
@@ -18,11 +18,9 @@ const getAll = async (req, res) => {
         res.status(200).json(lists);
       })
       .catch((error) => {
-        res
-          .status(500)
-          .json({
-            message: 'Failed to retrieve the data from Database ' || error,
-          });
+        res.status(500).json({
+          message: 'Failed to retrieve the data from Database ' || error,
+        });
       });
   } catch (error) {
     res.status(500).json(error);
