@@ -87,13 +87,13 @@ const createIdea = async (req, res) => {
     .getDb()
     .db()
     .collection('ideas')
-    .insertOne(toDo);
+    .insertOne(idea);
   if (response.acknowledged) {
     res.status(201).json(repsonse);
   } else {
     res
       .status(500)
-      .json(repsonse.error || 'Some error occured while creating the idea.');
+      .json(response.error || 'Some error occured while creating the idea.');
   }
 };
 
@@ -101,7 +101,7 @@ const deleteIdea = async (req, res) => {
   if (!ObjectId.isValid(req.params.id)) {
     res.status(400).json('Must use a valid idea ID to delete an idea.');
   }
-  const IdeaId = new ObjectId(req.params.id);
+  const ideaId = new ObjectId(req.params.id);
   const response = await mongodb
     .getDb()
     .db()
