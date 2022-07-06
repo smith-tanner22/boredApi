@@ -1,9 +1,6 @@
 const mongodb = require('../DataBase/dbConnect');
 const ObjectId = require('mongodb').ObjectId;
-const {
-  CreateMediaBodyValid,
-  UpdateCommandBodyValid,
-} = require('../Utils/validation');
+const {CreateMediaBodyValid} = require('../Utils/validation');
 
 /**********************************
  * GET: Getting all the Media
@@ -62,7 +59,7 @@ const createMedia = async (req, res) => {
     // validate the body
     const { error } = await CreateMediaBodyValid(req.body);
     if (error) {
-      return res.status(400).json(error);
+      return res.status(400).json(error.message);
     }
     // create a new command
     const media = {
@@ -98,7 +95,7 @@ const updateMedia = async (req, res, next) => {
     // validate the body coming in
     const { error } = CreateMediaBodyValid(req.body);
     if (error) {
-      return res.status(400).json(error);
+      return res.status(400).json(error.message);
     }
     // then create the new object
     // create a new command
