@@ -24,7 +24,7 @@ const getSingle = async (req, res) => {
   mongodb
     .getDb()
     .db()
-    .collection('user')
+    .collection('users')
     .find({ _id: userId })
     .toArray((err, result) => {
       if (err) {
