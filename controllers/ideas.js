@@ -3,6 +3,7 @@ const ObjectId = require('mongodb').ObjectId;
 // import validation
 
 const getAll = async (req, res) => {
+  console.log("here me")
   mongodb
     .getDb()
     .db()
@@ -13,6 +14,7 @@ const getAll = async (req, res) => {
         res.status(400).json({ message: err });
       }
       res.setHeader('Content-Type', 'application/json');
+      console.log(ideas)
       res.status(200).json(ideas);
     });
 };
@@ -40,6 +42,8 @@ const updateIdea = async (req, res) => {
   if (!ObjectId.isValid(req.params.id)) {
     res.status(400).json('Must use a valid idea id to update an idea.');
   }
+
+  console.log("here")
   const ideaId = new ObjectId(req.params.id);
   const idea = {
     name: req.body.name,
@@ -59,12 +63,10 @@ const updateIdea = async (req, res) => {
     .collection('ideas')
     .replaceOne({ _id: ideaId }, idea);
   console.log(response);
-  if (response.modififedCount > 0) {
+  if (response.modifiedCount > 0) {
     res.status(204).json(response);
   } else {
-    req
-      .status(500)
-      .json(
+    res.status(500).json(
         response.error || 'Some error occuring while updating the to do idea.'
       );
   }
@@ -89,7 +91,7 @@ const createIdea = async (req, res) => {
     .collection('ideas')
     .insertOne(idea);
   if (response.acknowledged) {
-    res.status(201).json(repsonse);
+    res.status(201).json(response);
   } else {
     res
       .status(500)
