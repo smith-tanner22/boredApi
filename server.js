@@ -7,6 +7,8 @@ const bodyParser = require('body-parser');
 
 const { auth } = require('express-openid-connect');
 require('dotenv').config();
+
+const port = process.env.PORT || 3000;
 const app = express();
 // test 3
 
@@ -62,12 +64,15 @@ app
   .use(cors())
   .use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader(
+      'Access-Control-Allow-Headers',
+      'Origin, X-Requested-With, Content-Type, Accept, Z-key'
+    );
+    res.setHeader('Content-Type', 'application/json');
     res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
     next();
   })
   .use('/', require('./Routes'));
-
-const port = process.env.PORT || 3000;
 
 mongodb.initDb((err) => {
   if (err) {
