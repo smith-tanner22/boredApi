@@ -10,11 +10,11 @@ const CreateIdeaBodyValid = async (body)=>{
                 cost: Joi.number().required(),
                 inside: Joi.boolean().required(),
                 location: Joi.string().required(),
-                participants: Joi.string.required(),
+                participants: Joi.string().required(),
                 requirement: Joi.required(),
-                review: Joi.string().required(),
+                review: Joi.string(),
                 category: Joi.string().required(),
-                media: Joi.string().required()
+                media: Joi.string()
         })
         return schema.validate(body);
     }
@@ -35,10 +35,19 @@ const CreateReviewBodyValid = async (body)=>{
         return schema.validate(body);
     }
 
+const CreateUserBodyValid = async (body)=>{
+        const schema = Joi.object({
+                email: Joi.string().required(),
+                password: Joi.string().required()
+        })
+        return schema.validate(body);
+    }
+
 
 
     module.exports={
          CreateIdeaBodyValid,
          CreateMediaBodyValid,
          CreateReviewBodyValid,
+         CreateUserBodyValid,
     }

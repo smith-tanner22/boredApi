@@ -9,9 +9,9 @@ router.get('/', userController.getAll);
 
 router.get('/:id', userController.getSingle);
 
-router.post('/', validation.saveUser, userController.createUser);
+router.post('/',  userController.createUser);
 
-router.put('/:id', validation.saveUser, userController.updateUser);
+router.put('/:id',  userController.updateUser);
 
 router.delete('/:id', userController.deleteUser);
 
