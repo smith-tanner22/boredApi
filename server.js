@@ -4,9 +4,10 @@ const mongodb = require('./DataBase/dbConnect');
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger.json');
 const bodyParser = require('body-parser');
-const app = express();
+
 const { auth } = require('express-openid-connect');
 require('dotenv').config();
+const app = express();
 // test 3
 
 var options = {
