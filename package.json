@@ -2,7 +2,7 @@
   "name": "boredapi",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "jest": {
     "preset": "@shelf/jest-mongodb"
   },
