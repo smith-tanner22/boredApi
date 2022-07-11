@@ -195,554 +195,552 @@
         }
       }
     },
-    "paths": {
-      "/media/": {
-        "get": {
-          "description": "",
-          "produces": ["application/json"],
-          "tags": ["Media"],
-          "parameters": [],
-          "responses": {
-            "200": {
-              "description": "OK"
-            }
-          }
-        },
-        "post": {
-          "description": "",
-          "tags": ["Media"],
-          "parameters": [
-            {
-              "name": "body",
-              "in": "body",
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "name": {
-                    "type": "string"
-                  },
-                  "ImagePath": {
-                    "type": "string"
-                  }
-                }
-              }
-            }
-          ],
-          "responses": {
-            "200": {
-              "description": "Created"
-            },
-            "500": {
-              "description": "Internal Server Error"
-            }
+    "/media/": {
+      "get": {
+        "description": "",
+        "produces": ["application/json"],
+        "tags": ["Media"],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
           }
         }
       },
-      "/media/{id}": {
-        "get": {
-          "description": "",
-          "tags": ["Media"],
-          "produces": ["application/json"],
-          "parameters": [
-            {
-              "name": "id",
-              "in": "path",
-              "description": "",
-              "required": true,
-              "type": "string"
-            }
-          ],
-          "responses": {
-            "200": {
-              "description": "OK"
-            }
-          }
-        },
-        "put": {
-          "description": "",
-          "tags": ["Media"],
-          "parameters": [
-            {
-              "name": "id",
-              "in": "path",
-              "description": "",
-              "required": true,
-              "type": "string"
-            },
-            {
-              "name": "body",
-              "in": "body",
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "name": {
-                    "type": "string"
-                  },
-                  "ImagePath": {
-                    "type": "string"
-                  }
+      "post": {
+        "description": "",
+        "tags": ["Media"],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "ImagePath": {
+                  "type": "string"
                 }
               }
             }
-          ],
-          "responses": {
-            "204": {
-              "description": "No Content"
-            }
           }
-        },
-        "delete": {
-          "description": "",
-          "tags": ["Media"],
-          "parameters": [
-            {
-              "name": "id",
-              "in": "path",
-              "description": "",
-              "required": true,
-              "type": "string"
-            }
-          ],
-          "responses": {
-            "204": {
-              "description": "No Content"
-            },
-            "400": {
-              "description": "Bad Request"
-            }
+        ],
+        "responses": {
+          "200": {
+            "description": "Created"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/media/{id}": {
+      "get": {
+        "description": "",
+        "tags": ["Media"],
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
           }
         }
       },
-      "/categories/": {
-        "get": {
-          "description": "",
-          "produces": ["application/json"],
-          "tags": ["Category"],
-          "parameters": [],
-          "responses": {
-            "200": {
-              "description": "OK"
-            }
-          }
-        },
-        "post": {
-          "description": "",
-          "tags": ["Category"],
-          "parameters": [
-            {
-              "name": "body",
-              "in": "body",
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "social": {
-                    "type": "string"
-                  },
-                  "educational": {
-                    "type": "string"
-                  },
-                  "dates": {
-                    "type": "string"
-                  },
-                  "relaxation": {
-                    "type": "string"
-                  }
+      "put": {
+        "description": "",
+        "tags": ["Media"],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "ImagePath": {
+                  "type": "string"
                 }
               }
             }
-          ],
-          "responses": {
-            "200": {
-              "description": "Created"
-            },
-            "500": {
-              "description": "Internal Server Error"
-            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
           }
         }
       },
-      "/categories/{id}": {
-        "get": {
-          "description": "",
-          "tags": ["Category"],
-          "produces": ["application/json"],
-          "parameters": [
-            {
-              "name": "id",
-              "in": "path",
-              "description": "",
-              "required": true,
-              "type": "string"
-            }
-          ],
-          "responses": {
-            "200": {
-              "description": "OK"
-            }
+      "delete": {
+        "description": "",
+        "tags": ["Media"],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string"
           }
-        },
-        "put": {
-          "description": "",
-          "tags": ["Category"],
-          "parameters": [
-            {
-              "name": "id",
-              "in": "path",
-              "description": "",
-              "required": true,
-              "type": "string"
-            },
-            {
-              "name": "body",
-              "in": "body",
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "social": {
-                    "type": "string"
-                  },
-                  "educational": {
-                    "type": "string"
-                  },
-                  "dates": {
-                    "type": "string"
-                  },
-                  "relaxation": {
-                    "type": "string"
-                  }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/categories/": {
+      "get": {
+        "description": "",
+        "produces": ["application/json"],
+        "tags": ["Category"],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "description": "",
+        "tags": ["Category"],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "social": {
+                  "type": "string"
+                },
+                "educational": {
+                  "type": "string"
+                },
+                "dates": {
+                  "type": "string"
+                },
+                "relaxation": {
+                  "type": "string"
                 }
               }
             }
-          ],
-          "responses": {
-            "204": {
-              "description": "No Content"
-            }
           }
-        },
-        "delete": {
-          "description": "",
-          "tags": ["Category"],
-          "parameters": [
-            {
-              "name": "id",
-              "in": "path",
-              "description": "",
-              "required": true,
-              "type": "string"
-            }
-          ],
-          "responses": {
-            "204": {
-              "description": "No Content"
-            },
-            "400": {
-              "description": "Bad Request"
-            }
+        ],
+        "responses": {
+          "200": {
+            "description": "Created"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/categories/{id}": {
+      "get": {
+        "description": "",
+        "tags": ["Category"],
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
           }
         }
       },
+      "put": {
+        "description": "",
+        "tags": ["Category"],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "social": {
+                  "type": "string"
+                },
+                "educational": {
+                  "type": "string"
+                },
+                "dates": {
+                  "type": "string"
+                },
+                "relaxation": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          }
+        }
+      },
+      "delete": {
+        "description": "",
+        "tags": ["Category"],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
 
-      "/users/": {
-        "get": {
-          "security": {
-            "Bearer": []
-          },
-          "tags": ["Users"],
-          "description": "",
-          "produces": ["application/json"],
-          "parameters": [],
-          "responses": {
-            "200": {
-              "description": "OK"
-            },
-            "500": {
-              "description": "Internal Server Error"
-            }
-          }
+    "/users/": {
+      "get": {
+        "security": {
+          "Bearer": []
         },
-        "post": {
-          "security": {
-            "Bearer": []
+        "tags": ["Users"],
+        "description": "",
+        "produces": ["application/json"],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
           },
-          "tags": ["Users"],
-          "description": "",
-          "parameters": [
-            {
-              "name": "body",
-              "in": "body",
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "lastName": {
-                    "example": "string"
-                  },
-                  "firstName": {
-                    "example": "string"
-                  },
-                  "email": {
-                    "example": "string@mail"
-                  },
-                  "password": {
-                    "example": "string"
-                  }
-                }
-              }
-            }
-          ],
-          "responses": {
-            "201": {
-              "description": "Created"
-            },
-            "400": {
-              "description": "Bad Request"
-            },
-            "500": {
-              "description": "Internal Server Error"
-            }
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       },
-      "/user/{id}": {
-        "get": {
-          "security": {
-            "Bearer": []
-          },
-          "tags": ["Users"],
-          "description": "",
-          "produces": ["application/json"],
-          "parameters": [
-            {
-              "name": "id",
-              "in": "path",
-              "required": true,
-              "type": "string"
-            }
-          ],
-          "responses": {
-            "200": {
-              "description": "OK"
-            },
-            "500": {
-              "description": "Internal Server Error"
-            }
-          }
+      "post": {
+        "security": {
+          "Bearer": []
         },
-        "put": {
-          "security": {
-            "Bearer": []
-          },
-          "tags": ["Users"],
-          "description": "",
-          "parameters": [
-            {
-              "name": "id",
-              "in": "path",
-              "required": true,
-              "type": "string"
-            },
-            {
-              "name": "body",
-              "in": "body",
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "lastName": {
-                    "type": "string"
-                  },
-                  "firstName": {
-                    "type": "string"
-                  },
-                  "email": {
-                    "type": "string"
-                  }
+        "tags": ["Users"],
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "lastName": {
+                  "example": "string"
+                },
+                "firstName": {
+                  "example": "string"
+                },
+                "email": {
+                  "example": "string@mail"
+                },
+                "password": {
+                  "example": "string"
                 }
               }
             }
-          ],
-          "responses": {
-            "204": {
-              "description": "No Content"
-            },
-            "400": {
-              "description": "Bad Request"
-            },
-            "500": {
-              "description": "Internal Server Error"
-            }
           }
-        },
-        "delete": {
-          "security": {
-            "Bearer": []
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
           },
-          "tags": ["Users"],
-          "description": "",
-          "parameters": [
-            {
-              "name": "id",
-              "in": "path",
-              "required": true,
-              "type": "string"
-            }
-          ],
-          "responses": {
-            "204": {
-              "description": "No Content"
-            },
-            "400": {
-              "description": "Bad Request"
-            },
-            "500": {
-              "description": "Internal Server Error"
-            }
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/user/{id}": {
+      "get": {
+        "security": {
+          "Bearer": []
+        },
+        "tags": ["Users"],
+        "description": "",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       },
-      "/reviews/": {
-        "get": {
-          "security": {
-            "Bearer": []
-          },
-          "tags": ["Review"],
-          "description": "",
-          "produces": ["application/json"],
-          "parameters": [],
-          "responses": {
-            "200": {
-              "description": "OK"
-            },
-            "500": {
-              "description": "Internal Server Error"
-            }
-          }
+      "put": {
+        "security": {
+          "Bearer": []
         },
-        "post": {
-          "security": {
-            "Bearer": []
+        "tags": ["Users"],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
           },
-          "tags": ["Review"],
-          "description": "",
-          "parameters": [
-            {
-              "name": "body",
-              "in": "body",
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "description": {
-                    "type": "string"
-                  },
-                  "rating": {
-                    "type": "number"
-                  }
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "lastName": {
+                  "type": "string"
+                },
+                "firstName": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
                 }
               }
             }
-          ],
-          "responses": {
-            "201": {
-              "description": "Created"
-            },
-            "400": {
-              "description": "Bad Request"
-            },
-            "500": {
-              "description": "Internal Server Error"
-            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       },
-      "/review/{id}": {
-        "get": {
-          "security": {
-            "Bearer": []
-          },
-          "tags": ["Review"],
-          "description": "",
-          "produces": ["application/json"],
-          "parameters": [
-            {
-              "name": "id",
-              "in": "path",
-              "required": true,
-              "type": "string"
-            }
-          ],
-          "responses": {
-            "200": {
-              "description": "OK"
-            },
-            "500": {
-              "description": "Internal Server Error"
-            }
-          }
+      "delete": {
+        "security": {
+          "Bearer": []
         },
-        "put": {
-          "security": {
-            "Bearer": []
+        "tags": ["Users"],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
           },
-          "tags": ["Review"],
-          "description": "",
-          "parameters": [
-            {
-              "name": "id",
-              "in": "path",
-              "required": true,
-              "type": "string"
-            },
-            {
-              "name": "body",
-              "in": "body",
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "description": {
-                    "type": "string"
-                  },
-                  "rating": {
-                    "type": "number"
-                  }
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/reviews/": {
+      "get": {
+        "security": {
+          "Bearer": []
+        },
+        "tags": ["Review"],
+        "description": "",
+        "produces": ["application/json"],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "post": {
+        "security": {
+          "Bearer": []
+        },
+        "tags": ["Review"],
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "description": {
+                  "type": "string"
+                },
+                "rating": {
+                  "type": "number"
                 }
               }
             }
-          ],
-          "responses": {
-            "204": {
-              "description": "No Content"
-            },
-            "400": {
-              "description": "Bad Request"
-            },
-            "500": {
-              "description": "Internal Server Error"
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/review/{id}": {
+      "get": {
+        "security": {
+          "Bearer": []
+        },
+        "tags": ["Review"],
+        "description": "",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "put": {
+        "security": {
+          "Bearer": []
+        },
+        "tags": ["Review"],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "description": {
+                  "type": "string"
+                },
+                "rating": {
+                  "type": "number"
+                }
+              }
             }
           }
-        },
-        "delete": {
-          "security": {
-            "Bearer": []
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
           },
-          "tags": ["Review"],
-          "description": "",
-          "parameters": [
-            {
-              "name": "id",
-              "in": "path",
-              "required": true,
-              "type": "string"
-            }
-          ],
-          "responses": {
-            "204": {
-              "description": "No Content"
-            },
-            "400": {
-              "description": "Bad Request"
-            },
-            "500": {
-              "description": "Internal Server Error"
-            }
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "delete": {
+        "security": {
+          "Bearer": []
+        },
+        "tags": ["Review"],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       }
