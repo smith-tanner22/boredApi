@@ -68,7 +68,7 @@ app
     //   'Access-Control-Allow-Headers',
     //   'Origin, X-Requested-With, Content-Type, Accept, Z-key'
     // );
-    // res.setHeader('Content-Type', 'application/json');
+    res.setHeader('Content-Type', 'application/json');
     res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
     next();
   })
@@ -82,3 +82,5 @@ mongodb.initDb((err) => {
     console.log(`Connected to DB and listening on ${port}`);
   }
 });
+
+module.exports = app;
