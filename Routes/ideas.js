@@ -8,10 +8,10 @@ const ideasController = require('../controllers/ideas');
 router.get('/', ideasController.getAll);
 router.get('/:id', ideasController.getSingle);
 
-router.post('/', ideasController.createIdea);
+router.post('/', requiresAuth(), ideasController.createIdea);
 
-router.put('/:id', ideasController.updateIdea);
+router.put('/:id', requiresAuth(), ideasController.updateIdea);
 
-router.delete('/:id', ideasController.deleteIdea);
+router.delete('/:id', requiresAuth(), ideasController.deleteIdea);
 
 module.exports = router;
