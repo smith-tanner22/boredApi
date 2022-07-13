@@ -8,10 +8,10 @@ router.get('/', mediaController.getAll);
 
 router.get('/:id', mediaController.getMediaById);
 
-router.post('/', requiresAuth(), mediaController.createMedia);
+router.post('/', mediaController.createMedia);
 
-router.put('/:id', requiresAuth(), mediaController.updateMedia);
+router.put('/:id', mediaController.updateMedia);
 
-router.delete('/:id', requiresAuth(), mediaController.deleteMedia);
+router.delete('/:id', mediaController.deleteMedia);
 
 module.exports = router;

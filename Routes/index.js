@@ -4,7 +4,7 @@ const router = express.Router();
 
 router.use('/', require('./swagger'));
 router.use('/ideas', require('./ideas'));
-router.use('/medias', require('./media'));
+router.use('/media', require('./media'));
 router.use('/reviews', require('./reviews'));
 router.use('/users', requiresAuth(), require('./user'));
 
