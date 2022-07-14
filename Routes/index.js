@@ -6,6 +6,6 @@ router.use('/', require('./swagger'));
 router.use('/ideas', require('./ideas'));
 router.use('/media', require('./media'));
 router.use('/reviews', require('./reviews'));
-router.use('/users', requiresAuth(), require('./user'));
+router.use('/users', require('./user'));
 
 module.exports = router;
