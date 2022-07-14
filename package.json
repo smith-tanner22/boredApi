@@ -6,6 +6,11 @@
   "jest": {
     "preset": "@shelf/jest-mongodb"
   },
+  "nodemonConfig": {
+    "ignore": [
+      "*.spec.js"
+    ]
+  },
   "scripts": {
     "test": "jest",
     "start": "nodemon server.js",
