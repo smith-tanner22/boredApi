@@ -535,10 +535,10 @@
               "type": "object",
               "properties": {
                 "email": {
-                  "type": "string"
+                  "example": "string@mail"
                 },
                 "password": {
-                  "type": "string"
+                  "example": "string"
                 }
               }
             }
