@@ -139,25 +139,22 @@
                 "description": {
                   "type": "string"
                 },
-                "category": {
-                  "type": "string"
+                "cost": {
+                  "type": "number"
+                },
+                "inside": {
+                  "type": "boolean"
                 },
                 "location": {
                   "type": "string"
                 },
-                "inside/ outside": {
-                  "type": "boolean"
-                },
-                "cost": {
-                  "type": "number"
-                },
-                "requirements": {
+                "participants": {
                   "type": "string"
                 },
-                "participants": {
-                  "type": "number"
+                "requirement": {
+                  "type": "string"
                 },
-                "reviews": {
+                "category": {
                   "type": "string"
                 }
               }
@@ -537,12 +534,6 @@
             "schema": {
               "type": "object",
               "properties": {
-                "lastName": {
-                  "type": "string"
-                },
-                "firstName": {
-                  "type": "string"
-                },
                 "email": {
                   "type": "string"
                 }
