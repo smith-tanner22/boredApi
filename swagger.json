@@ -81,9 +81,6 @@
                 },
                 "category": {
                   "type": "string"
-                },
-                "reviews": {
-                  "type": "string"
                 }
               }
             }
