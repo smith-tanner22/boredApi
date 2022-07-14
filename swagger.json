@@ -76,7 +76,7 @@
                 "participants": {
                   "type": "string"
                 },
-                "requirements": {
+                "requirement": {
                   "type": "string"
                 },
                 "category": {
