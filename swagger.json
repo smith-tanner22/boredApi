@@ -64,23 +64,23 @@
                 "description": {
                   "type": "string"
                 },
-                "category": {
-                  "type": "string"
+                "cost": {
+                  "type": "number"
+                },
+                "inside": {
+                  "type": "boolean"
                 },
                 "location": {
                   "type": "string"
                 },
-                "inside/ outside": {
-                  "type": "boolean"
-                },
-                "cost": {
+                "participants": {
                   "type": "number"
                 },
                 "requirements": {
                   "type": "string"
                 },
-                "participants": {
-                  "type": "number"
+                "category": {
+                  "type": "string"
                 },
                 "reviews": {
                   "type": "string"
@@ -473,12 +473,6 @@
             "schema": {
               "type": "object",
               "properties": {
-                "lastName": {
-                  "example": "string"
-                },
-                "firstName": {
-                  "example": "string"
-                },
                 "email": {
                   "example": "string@mail"
                 },
